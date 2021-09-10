@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JayaDeHart/GETpeople/issues"
   },
-  "homepage": "https://github.com/JayaDeHart/GETpeople#readme"
+  "homepage": "https://github.com/JayaDeHart/GETpeople#readme",
+  "dependencies": {
+    "dynamoose": "^2.8.1"
+  }
 }
