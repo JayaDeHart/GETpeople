@@ -5,7 +5,7 @@ on:
     branches:
       - main
 
-  jobs:
+jobs:
   deploy_source:
     name: build and deploy lambda
     strategy:
