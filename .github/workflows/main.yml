@@ -27,5 +27,5 @@ jobs:
       - name: deploy
         run: |
           zip -j deploy.zip ./*
-          aws lambda update-function-code --function-name=GETpeople
+          aws lambda update-function-code --function-name GETpeople
           --zip-file fileb://deploy.zip
