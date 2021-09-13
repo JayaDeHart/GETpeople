@@ -10,6 +10,7 @@ const personSchema = new dynamoose.Schema({
 const Person = dynamoose.model('lab-18-people', personSchema);
 
 exports.handler = async (event) => {
+  console.log(event);
   let id = event.pathParameters.id;
   if (!id) {
     //return all
