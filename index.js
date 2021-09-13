@@ -14,13 +14,13 @@ exports.handler = async (event) => {
   let id = event.pathParameters.id;
   if (!id) {
     //return all
-    let response = Person.query().exec();
+    let response = Person.query('primarykey').exec();
     return {
       message: 'found',
       person: JSON.stringify(response),
     };
   } else {
-    let response = Person.query({ primarykey: id }).exec();
+    let response = Person.query('primarykey').where('primarykey').eq(id).exec();
     return {
       message: 'found',
       person: JSON.stringify(response),
